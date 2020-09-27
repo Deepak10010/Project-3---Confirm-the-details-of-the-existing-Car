@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test name="Default test" verbose="2">
+    <classes>
+      <class name="pages.actions.CarsListPageActions"/>
+      <class name="runner.RunCuke"/>
+      <class name="pages.locators.UsedCarsPageLocators"/>
+      <class name="pages.actions.ExistingCarPageActions"/>
+      <class name="steps.TestCase3_Steps"/>
+      <class name="pages.actions.TradeMeHomePageActions"/>
+      <class name="pages.locators.CarResultPageLocators"/>
+      <class name="pages.actions.CarBrowsePageActions"/>
+      <class name="pages.locators.CarBrowsePageLocators"/>
+      <class name="steps.AfterActions"/>
+      <class name="utils.SeleniumDriver"/>
+      <class name="steps.BeforeActions"/>
+      <class name="pages.locators.TradeMeHomePageLocators"/>
+      <class name="pages.locators.CarsListPageLocators"/>
+      <class name="pages.actions.CarResultPageActions"/>
+      <class name="pages.actions.UsedCarsPageActions"/>
+      <class name="pages.locators.ExistingCarPageLocators"/>
+    </classes>
+  </test> <!-- Default test -->
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="runner.RunCuke">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- runner.RunCuke -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
